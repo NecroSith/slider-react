@@ -11,11 +11,21 @@ class App extends Component {
   render() {
     return (
           <div className="wrapper">
+            <HelloWorld/>
             <SayFullName name="Yan" surname="Pustynnyy" link="http://study.up-skills.ru/pl/22098354" />
             <SayFullName name="Ivan" surname="Dulnev" link="http://study.up-skills.ru/pl/22098354" />
           </div>
     );
   }
+}
+
+function HelloWorld() {
+  let phrase = "React";
+  return (
+      <div>
+      <h1>Hello, {phrase}! </h1>
+      </div>
+    )
 }
 
 function SayFullName(props) {
